@@ -1,12 +1,13 @@
+import logo from './logo.svg';
 import './App.css';
-import Main from './components/Main';
+import Projects from './Components/Projects';
 
 function App() {
   return (
     <div className="App">
-      <Main/>
+      <Projects/>
     </div>
-  )
+  );
 }
 
 export default App;

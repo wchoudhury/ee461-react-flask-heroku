@@ -1,0 +1,14 @@
+.hw{
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.project-join {
+    margin-top: 50px !important;
+    height: 30px;
+    width: 50px;
+    justify-items: center;
+}
