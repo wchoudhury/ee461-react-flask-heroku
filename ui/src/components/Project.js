@@ -29,16 +29,16 @@ export class Project extends React.Component {
                   three = {String(this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set)}
                   four = {String(this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set+ ":" + this.state.count + ":" + this.state.set)}
                   set={this.state.set++}
-                  name = {String("Project" + this.state.count)}/>
+                  name = {String("Project " + this.state.count)}/>
                 <Set one = {String(this.state.count + ":" + this.state.set)} 
                   two = {String(this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set)}
                   three = {String(this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set)}
                   four = {String(this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set + ":" + this.state.count + ":" + this.state.set+ ":" + this.state.count + ":" + this.state.set)}
                   set={this.state.set++}
-                  name = {String("Project" + this.state.count)}/>
+                  name = {String("Project " + this.state.count)}/>
               </div>
               <div id='decide'>
-                <Button id={this.state.name} onClick={this.changeLogin.bind(this)}>Join</Button>
+                <Button id={this.state.name} onClick={this.changeLogin.bind(this)}>Join   </Button>
               </div>
           </div>
         </div> 
