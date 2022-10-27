@@ -1,17 +1,26 @@
-import React from 'react'
-import Project from './Project'
+import React from 'react';
+import Project from './Project';
 import "./Projects.css";
 
-const Projects = () => {
-  return (
-    <div className="title">Projects
-          <div className="projects">
-            <Project name="Project 1"/>
-            <Project name="Project 2"/>
-            <Project name="Project 3"/>
-        </div>
-    </div>
-  )
+export class Projects extends React.Component {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            count: 1
+        }
+    }
+
+    render () {
+        return (
+            <div class='Projects'>
+                <h2> Projects </h2>
+                <Project name = {String("Project" + this.state.count)} count={this.state.count++}/>
+                <Project name = {String("Project" + this.state.count)} count={this.state.count++}/>
+                <Project name = {String("Project" + this.state.count)} count={this.state.count++}/>
+            </div>
+        )
+    }
 }
 
 export default Projects

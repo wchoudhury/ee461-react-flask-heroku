@@ -1,0 +1,19 @@
+.Set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttonOne {
+    background-color: lightgreen;
+    margin: 5px;
+}
+
+.buttonTwo {
+    background-color: lightgreen;
+    margin: 5px;
+}
+
+#amount {
+    height: 10px;
+}
