@@ -13,12 +13,16 @@ export class Projects extends React.Component {
 
     render () {
         return (
-            <div class='Projects'>
-                <h2> Projects </h2>
+          <div className="head">
+            Projects
+            <div className="outline">
+              <div className="project">
                 <Project name = {String("Project" + this.state.count)} count={this.state.count++}/>
                 <Project name = {String("Project" + this.state.count)} count={this.state.count++}/>
                 <Project name = {String("Project" + this.state.count)} count={this.state.count++}/>
+              </div>
             </div>
+          </div>
         )
     }
 }

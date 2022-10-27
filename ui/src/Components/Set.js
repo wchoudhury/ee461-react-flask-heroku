@@ -21,12 +21,10 @@ export class Set extends React.Component {
     render () {
         return (
             <div class='Set'>
-                <p id={this.state.diffOne}>HWSet{this.state.set}: {this.state.amount}/100</p>
-                <TextField id={this.state.diffTwo} placeholder='Enter qty'></TextField>
-                <div class='buttonOne'>
+              <div class ='space'><h3 id={this.state.diffOne}>Set {this.state.set} - {this.state.amount}/100</h3></div>
+                <div class = 'box'><TextField id={this.state.diffTwo} placeholder='Enter amt'></TextField></div>
+                <div class='button'>
                     <Button id={this.state.diffThree} onClick={this.updateCheckIn.bind(this)}>Check In</Button>
-                </div>
-                <div class='buttonTwo'>
                     <Button id={this.state.diffFour} onClick={this.updateCheckOut.bind(this)}>Check Out</Button>
                 </div>
                 <br></br>

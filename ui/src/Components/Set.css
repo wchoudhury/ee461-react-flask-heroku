@@ -4,16 +4,19 @@
     justify-content: space-evenly;
 }
 
-.buttonOne {
-    background-color: lightgreen;
-    margin: 5px;
-}
-
-.buttonTwo {
-    background-color: lightgreen;
+.button{
     margin: 5px;
 }
 
 #amount {
     height: 10px;
+}
+
+.box{
+    margin: 2px;
+    margin-left: 4px;
+}
+
+.space{
+    margin: 4px;
 }

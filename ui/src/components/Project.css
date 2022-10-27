@@ -1,19 +1,35 @@
-.Project {
-    background-color: lightgrey;
-    margin: 20px;
-    width: 1000px;
-    height: 120px;
+.main{
+    font-size: small;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    width: 40vw;
+    height: 16.5vh;
+    border: solid #000;
+    border-width: 3px 3px;
+    margin: auto;
+}
+
+.display{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.heading{
+    text-align: left;
+    padding: 50px 0px;
+}
+
+.check {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 50px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 #decide {
-    width: 70px;
-    height: 40px;
-    float: left;
-    background-color: wheat;
+    margin-top: 50px !important;
+    height: 30px;
+    width: 50px;
 }
