@@ -20,10 +20,10 @@ export class Set extends React.Component {
 
     render () {
         return (
-            <div class='Set'>
+            <div class='Sets'>
               <div class ='space'><h3 id={this.state.diffOne}>Set {this.state.set} - {this.state.amount}/100</h3></div>
                 <div class = 'box'><TextField id={this.state.diffTwo} placeholder='Enter amt'></TextField></div>
-                <div class='button'>
+                <div class='space'>
                     <Button id={this.state.diffThree} onClick={this.updateCheckIn.bind(this)}>Check In</Button>
                     <Button id={this.state.diffFour} onClick={this.updateCheckOut.bind(this)}>Check Out</Button>
                 </div>
@@ -43,7 +43,7 @@ export class Set extends React.Component {
         {
             this.state.amount = 100;
         }
-        document.getElementById(this.state.diffOne).innerHTML = "HWSet" + this.state.set + ": " + this.state.amount + "/100";
+        document.getElementById(this.state.diffOne).innerHTML = "Set " + this.state.set + ": " + this.state.amount + "/100";
 
         fetch(`/checkin/${this.state.name}/${added}`)
                 .then(response => response.text())
@@ -64,7 +64,7 @@ export class Set extends React.Component {
         {
             this.state.amount = 0;
         }
-        document.getElementById(this.state.diffOne).innerHTML = "HWSet" + this.state.set + ": " + this.state.amount + "/100";
+        document.getElementById(this.state.diffOne).innerHTML = "Set " + this.state.set + ": " + this.state.amount + "/100";
 
         fetch(`/checkout/${this.state.name}/${removed}`)
                 .then(response => response.text())

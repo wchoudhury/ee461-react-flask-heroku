@@ -37,7 +37,7 @@ export class Project extends React.Component {
                   set={this.state.set++}
                   name = {String("Project " + this.state.count)}/>
               </div>
-              <div id='decide'>
+              <div class='join'>
                 <Button id={this.state.name} onClick={this.changeLogin.bind(this)}>Join   </Button>
               </div>
           </div>
@@ -48,7 +48,6 @@ export class Project extends React.Component {
     changeLogin() {
         if(this.state.in == 1)
         {
-            document.getElementById(this.state.count).style.backgroundColor = "green";
             document.getElementById(this.state.name).innerHTML = "Leave";
             this.state.in = 0;
 
@@ -61,7 +60,6 @@ export class Project extends React.Component {
         }
         else
         {
-            document.getElementById(this.state.count).style.backgroundColor = "lightgrey";
             document.getElementById(this.state.name).innerHTML = "Join";
             this.state.in = 1;
 

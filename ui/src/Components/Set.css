@@ -1,15 +1,7 @@
-.Set {
+.Sets {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-.button{
-    margin: 5px;
-}
-
-#amount {
-    height: 10px;
 }
 
 .box{
@@ -18,5 +10,5 @@
 }
 
 .space{
-    margin: 4px;
+    margin: 5px;
 }
